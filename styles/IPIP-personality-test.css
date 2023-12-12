@@ -1,0 +1,135 @@
+
+.container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.test-title{
+    font-family: sans-serif;
+    color: rgb(52, 80, 66);
+}
+
+.test-header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.header-label{
+    color: rgb(51, 51, 51);
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+
+.test-envirionment{
+    background-color: rgba(255, 255, 255, 0.451);
+    width: 80vw;
+    border-radius: 20px;
+    padding-bottom: 25px;
+    max-width: 800px;
+}
+
+.test-body{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.form-item{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-input-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    font-family: sans-serif;
+}
+
+.form-input-container label{
+    font-size: 18px;
+    color: rgb(92, 80, 80);
+}
+
+.form-input-container input[type = radio]{
+    width: 23px;
+    height: 23px;
+    margin-top: auto;
+    margin-bottom: auto;
+    appearance: none;
+    border: 2px solid;
+    border-color: rgba(0, 255, 153, 0.759);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .25s ease-in-out;
+}
+
+.form-input-container input[type = radio]:checked{
+    background-color: rgba(130, 210, 178, 0.759);
+    transform: scale(120%);
+    border-color: rgba(130, 210, 178, 0.759);
+}
+
+.questions{
+    font-size: 22px;
+    margin: 20px;
+    font-family: sans-serif;
+}
+
+.next-page-button{
+    width: 100px;
+    height: 40px;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    border-radius: 20px;
+    background-color: rgb(176, 168, 234);
+    border: none;
+    transition: .5s ease-in-out;
+}
+
+.button-and-progress-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.progress-label{
+    font-size: 20px;
+    margin-top: 20px;
+    font-family: sans-serif;
+}
+
+.results-body{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (hover: hover) {
+    .form-input-container input[type = radio]:hover{
+        background-color: rgba(0, 255, 153, 0.242);
+    }
+    .next-page-button:hover{
+        background-color: rgb(196, 113, 196);
+    }
+}

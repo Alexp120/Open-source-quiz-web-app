@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="../index.css" rel="stylesheet"/>
+    <link href="../styles/IPIP-personality-test.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz app</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="home-link" href="../index.html"><h1>The Quizzler</h1></a>
+            <div><a href="stats.html"  class="stats-link center-link">Stats</a></div>
+        </nav>   
+    </header>
+    <main>
+        <div class="container">
+            <h1 class="test-title">Personality test</h1>
+            <div class="test-envirionment" id="test-container">
+                <section class="test-header">
+                    <span class="header-label">Accurate</span>
+                    <span class="header-label">&#9830</span>
+                    <span class="header-label">Neutral</span>
+                    <span class="header-label">&#9830</span>
+                    <span class="header-label">Inaccurate</span>
+                </section>
+
+                <form class="test-body" id="test-body">
+
+                </form>
+                        <div class="button-and-progress-container">
+                        <label class="progress-label" id="page-count">Progress: 0/9</label>
+                        <button type="button" class="next-page-button" id="next-button">Next</button>
+                        </div>
+            </div>
+        </div>
+    </main>
+    <script src="../modules/IPIP-personality-test.js" type="module"></script>
+</body>
+</html>
