@@ -4,11 +4,12 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    height: max-content;
 }
 
 .test-title{
-    font-family: sans-serif;
-    color: rgb(52, 80, 66);
+    font-family: cursive;
+    color: rgb(0, 0, 0);
 }
 
 .test-header{
@@ -25,6 +26,7 @@
     font-weight: bold;
     margin-top: 20px;
 }
+
 
 
 .test-envirionment{
@@ -125,11 +127,61 @@
     align-items: center;
 }
 
+.results-paragraph{
+    font-size: 18px;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: cursive;
+}
+.loading-sentences{
+    color: rgb(51, 51, 51);
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+    transition: all .4s ease-in-out;
+}
+
+.graph-container{
+    width: 80%;
+    margin-top: 10px;
+}
+
 @media (hover: hover) {
     .form-input-container input[type = radio]:hover{
         background-color: rgba(0, 255, 153, 0.242);
     }
     .next-page-button:hover{
         background-color: rgb(196, 113, 196);
+    }
+}
+
+@media (max-width: 600px) {
+    .form-input-container input[type = radio]{
+        width: 20px;
+        height: 20px;
+    }
+
+    .test-envirionment{
+        width: 90vw;
+    }
+
+    .form-input-container label{
+        position: absolute;
+        visibility: hidden;
+    }
+
+    .test-header{
+        gap: 10px;
+        display: flex;
+    }
+
+
+}
+
+@media (max-width: 400px) {
+    .header-label{
+        font-size: 5vw;
     }
 }

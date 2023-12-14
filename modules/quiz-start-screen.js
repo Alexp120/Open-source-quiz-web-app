@@ -31,4 +31,3 @@
 startButton.addEventListener("click", () => {
     loadEnvirionment(2);
 })
-

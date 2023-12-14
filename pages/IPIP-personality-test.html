@@ -3,20 +3,22 @@
 <head>
     <link href="../index.css" rel="stylesheet"/>
     <link href="../styles/IPIP-personality-test.css" rel="stylesheet">
+    <link href="../loading-components/loading.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz app</title>
+    
 </head>
 <body>
     <header>
         <nav>
-            <a class="home-link" href="../index.html"><h1>The Quizzler</h1></a>
+            <a class="home-link" href="../index.html"><h1 class="home-button" >The Quizzler</h1></a>
             <div><a href="stats.html"  class="stats-link center-link">Stats</a></div>
         </nav>   
     </header>
     <main>
         <div class="container">
-            <h1 class="test-title">Personality test</h1>
+            <h1 id="test-title" class="test-title">Personality test</h1>
             <div class="test-envirionment" id="test-container">
                 <section class="test-header">
                     <span class="header-label">Accurate</span>
@@ -36,6 +38,7 @@
             </div>
         </div>
     </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
     <script src="../modules/IPIP-personality-test.js" type="module"></script>
 </body>
 </html>
